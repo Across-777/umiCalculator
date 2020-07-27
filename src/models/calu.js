@@ -39,8 +39,11 @@ export default {
             left = display;
         }, */
     clickHandler(state, { payload }) {
-      var buttonText = event.target.innerText;
-      console.log('button txt:' + buttonText);
+      // get ButtonTXT value from payload
+      var buttonText = payload.ButtonTxt;
+
+      // var buttonText = event.target.innerText;
+      // console.log('button txt:' + buttonText);
       if (buttonText == '=') {
         if (state.calcState === state.states.OpInput) {
           state.right = state.left;
@@ -108,11 +111,10 @@ export default {
         state.left = state.op = state.right = null;
         state.calcState = state.states.Init;
       }
-      state.value = state.display;
+      // state.value = state.display;
       // this.updateState(display);
-      console.log('display:' + state.display);
-      console.log('value:' + state.value);
-      //this
+      // console.log('display:' + state.display);
+      // console.log('value:' + state.value);
       return {
         ...state,
         ...payload,
