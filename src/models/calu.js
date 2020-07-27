@@ -39,9 +39,7 @@ export default {
             left = display;
         }, */
     clickHandler(state, { payload }) {
-      // get ButtonTXT value from payload
       var buttonText = payload.ButtonTxt;
-
       // var buttonText = event.target.innerText;
       // console.log('button txt:' + buttonText);
       if (buttonText == '=') {
