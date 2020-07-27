@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'dva';
 import Calculator from '../components/Calculator';
-import ButtonList from '../components/ButtonList';
+// import ButtonList from '../components/ButtonList';
 
 const Calc = props => {
   /* const { value, display, numberArr, dispatch } = props;
