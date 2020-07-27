@@ -15,7 +15,6 @@ const Calc = props => {
 
   return (
     <div>
-      {/* <h2>{value}</h2> */}
       <input type="text" id="display" value={display} readOnly />
       <div>
         <ButtonList buttons={numberArr[0]} onClick={clickHandler}></ButtonList>
@@ -23,6 +22,8 @@ const Calc = props => {
         <ButtonList buttons={numberArr[2]} onClick={clickHandler}></ButtonList>
         <ButtonList buttons={numberArr[3]} onClick={clickHandler}></ButtonList>
       </div>
+
+      {/* <Calculator display={display} numberArr={numberArr} onClick={clickHandler}/> */}
     </div>
   );
 };

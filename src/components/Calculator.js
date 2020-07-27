@@ -2,7 +2,7 @@ import React from 'react';
 import ButtonList from './ButtonList';
 
 export default props => {
-  const { display } = props;
+  const { display, numberArr } = props;
 
   return (
     <div>
